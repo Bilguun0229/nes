@@ -91,7 +91,7 @@ export default function Layout({ children, title }: LayoutProps) {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti sunt dolor possimus, tenetur blanditiis ad vel dolores voluptate praesentium.
             </div>
             <div>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, iure.
+              Lorem ipsum, dolor ddsit amet consectetur adipisicing elit. Nihil, iure.
             </div>
             <div>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, iure.

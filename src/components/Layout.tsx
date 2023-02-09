@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
-
+import PhoneCallbackIcon from '@mui/icons-material/PhoneCallback';
 export interface LayoutProps {
   children: React.ReactNode;
   title: string;
@@ -24,19 +24,17 @@ export default function Layout({ children, title }: LayoutProps) {
       </Head>
       <div
         className="flex min-h-screen flex-col justify-between font-nunito"
-        // style={roboto.style}
+      // style={roboto.style}
       >
         <header
-          className={`${
-            scrollY > 20 ? 'sticky top-0 bg-gray-100' : 'absolute top-5'
-          } w-full px-5 py-2 shadow-md z-10`}
+          className={`${scrollY > 20 ? 'sticky top-0 bg-gray-100' : 'absolute top-5'
+            } w-full px-5 py-2 shadow-md z-10`}
         >
           <main className="flex justify-between items-center">
             <svg
               viewBox="0 0 500 200"
-              className={`w-20 md:w-24 lg:w-28 xl:w-32 ${
-                scrollY > 20 ? 'fill-primary' : 'fill-gray-100'
-              }`}
+              className={`w-20 md:w-24 lg:w-28 xl:w-32 ${scrollY > 20 ? 'fill-primary' : 'fill-gray-100'
+                }`}
             >
               <path d="M252.44,90.79V29h8.71L281,60.26a174.34,174.34,0,0,1,11.09,20.08l.19-.09c-.74-8.26-.92-15.78-.92-25.4V29h7.52v61.8h-8.07L271.15,59.43A197.27,197.27,0,0,1,259.59,38.8l-.27.09c.46,7.8.64,15.22.64,25.49V90.79Z" />
               <path d="M344.77,61.82h-24V84.1h26.77v6.69H312.77V29h33.38v6.69h-25.4V55.21h24Z" />
@@ -55,9 +53,8 @@ export default function Layout({ children, title }: LayoutProps) {
               <path d="M127.2,200a103.44,103.44,0,0,1-26.8-100A103.46,103.46,0,0,1,127.2,200Z" />
             </svg>
             <nav
-              className={`flex gap-5 font-medium ${
-                scrollY > 20 ? 'text-primary' : 'text-gray-100'
-              }`}
+              className={`flex gap-5 font-medium ${scrollY > 20 ? 'text-primary' : 'text-gray-100'
+                }`}
             >
               <Link
                 href="/"
@@ -89,6 +86,23 @@ export default function Layout({ children, title }: LayoutProps) {
         <div>{children}</div>
         <footer className="flex justify-center items-center shadow-inner w-full h-10">
           footer
+          <div className="grid grid-cols-4 gap-2 w-[678]">
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti sunt dolor possimus, tenetur blanditiis ad vel dolores voluptate praesentium.
+            </div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, iure.
+            </div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, iure.
+            </div>
+            <div>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, iure.
+            </div>
+          </div>
+          <h1 className='text-gray-100 bg-primary p' >Сайн байна уу</h1>
+          <PhoneCallbackIcon className='text-orange-900' />
+          <div></div>
         </footer>
       </div>
     </>
